@@ -1,0 +1,72 @@
+/* Estilos generales del formulario */
+.BdSepulveda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .formulario {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formu-titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-5,
+  .Escribenos {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-5 {
+    height: 40px;
+  }
+  
+  .Escribenos {
+    height: 100px;
+  }
+  
+  .boton {
+    background-color: #109bdb;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: #cc3737;
+  }
+  
+  /* Estilos para hacer el formulario responsive */
+  @media screen and (max-width: 600px) {
+    .formulario {
+      max-width: 300px;
+    }
+  
+    .boton {
+      width: 100%;
+    }
+  }
+  
