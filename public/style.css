@@ -1,5 +1,12 @@
+body {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+
+}
+
 /* Estilos generales del formulario */
-.BdSepulveda {
+.BDJakaton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +14,7 @@
   }
   
   .formulario {
-    background-color: #f2f2f2;
+    background-color: #4050a7b4;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,19 +34,21 @@
   .item-1,
   .item-2,
   .item-3,
-  .item-5,
+  .item-4,
+  .item-6,
   .Escribenos {
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #ccc;
   }
   
   .item-1,
   .item-2,
   .item-3,
-  .item-5 {
-    height: 40px;
+  .item-4,
+  .item-6 {
+    height: 20px;
   }
   
   .Escribenos {
@@ -51,14 +60,20 @@
     color: #fff;
     border: none;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 25px;
     cursor: pointer;
   }
   
   .boton:hover {
-    background-color: #cc3737;
+    background-color: #4c9928;
   }
   
+  .cuestion {
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
   /* Estilos para hacer el formulario responsive */
   @media screen and (max-width: 600px) {
     .formulario {

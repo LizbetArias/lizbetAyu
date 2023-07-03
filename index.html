@@ -10,22 +10,26 @@
 </head>
 <body>
     <!--BASE DE DATOS-->
-    <section class="BdSepulveda">
+    <section class="BDJakaton">
         <div class="formulario">
             <h2 class="formu-titulo">ENVIANOS TU MENSAJE</h2>
-            <form action="" class="form" id="form">
-                <input type="text" class="item-1" placeholder="Nombres" id="NOMBRES">
-                <input type="text" class="item-2" placeholder="Apellidos" id="APELLIDOS">
-                <input type="text" class="item-3" placeholder="Telefonó" id="TELEFONO">
-                <input type="email" class="item-5" placeholder="Correo electronico" id="EMAIL">
-                <textarea name="" id="MSG" class="Escribenos" placeholder="¿en que podemos ayudarlo?"></textarea>
+            <form action="#" class="form" id="form">
+                <input type="text" class="item-1" placeholder="Nombres" id="NOMBRES" name="NOMBRES">
+                <input type="text" class="item-2" placeholder="Apellidos" id="APELLIDOS" name="APELLIDOS">
+                <input type="tel" class="item-3" placeholder="Teléfono" id="TELEFONO" name="TELEFONO">
+                <input type="email" class="item-4" placeholder="Correo electrónico" id="EMAIL" name="EMAIL">
+                <textarea name="MSG" id="MSG" class="Escribenos" placeholder="¿En qué podemos ayudarlo?"></textarea>
+                <input type="password" placeholder="Contraseña" class="item-6" id="CONTRASEÑA" name="CONTRASEÑA">
+                <a href="#" class="cuestion">¿Olvidó su contraseña?</a>
+                <input type="checkbox" id="check" name="opciones">
+                <label for="check">Acepta las políticas de privacidad</label>
                 <button class="boton" id="btnCrear" type="submit">ENVIAR</button>
             </form>
         </div>
+    </section>
 
     <script src="/public/registros.js"></script>
     <script src="index.js"></script>  
 
-</section>
 </body>
 </html>

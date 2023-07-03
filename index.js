@@ -53,7 +53,8 @@ app.post(
             APELLIDOS: req.body.APELLIDOS,
             TELEFONO: req.body.TELEFONO,
             EMAIL: req.body.EMAIL,
-            MSG: req.body.MSG
+            MSG: req.body.MSG,
+            CONTRASEÑA: req.body.CONTRASEÑA
            
         }
         let sql = "INSERT INTO consultas SET ?";

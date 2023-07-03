@@ -6,6 +6,7 @@ const APELLIDOS = document.getElementById("APELLIDOS");
 const TELEFONO = document.getElementById("TELEFONO");
 const EMAIL = document.getElementById("EMAIL");
 const MSG = document.getElementById("MSG");
+const CONTRASEÑA = document.getElementById("CONTRASEÑA");
 
 
 let option = '';
@@ -21,7 +22,7 @@ formArticulo.addEventListener('submit',
     (e) => {
     e.preventDefault();
     if (option == 'crear') {
-        if( NOMBRES.value == "" || APELLIDOS.value == ""|| TELEFONO.value == ""|| EMAIL.value== ""|| MSG.value=="") {
+        if( NOMBRES.value == "" || APELLIDOS.value == ""|| TELEFONO.value == ""|| EMAIL.value== ""|| MSG.value==""|| CONTRASEÑA.value=="") {
             alert("Asegúrese de que todos los campos estén completos");
             return false;
 
@@ -40,7 +41,8 @@ formArticulo.addEventListener('submit',
                             APELLIDOS: APELLIDOS.value,
                             TELEFONO: TELEFONO.value,
                             EMAIL: EMAIL.value,
-                            MSG: MSG.value
+                            MSG: MSG.value,
+                            CONTRASEÑA: CONTRASEÑA.value
                         }
                     )
                 }
