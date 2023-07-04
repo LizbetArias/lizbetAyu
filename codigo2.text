@@ -99,3 +99,78 @@ ssh -i lizbet2.pem ubuntu@44.543.545
 
 //
 
+------------PASOS PARA SUBIR LA BASE DE DATOS AL CLOUD------------------------
+
+//Enstramos al gitbash de la carpeta cloud y inicializamos el repo
+
+git init
+git status
+git add .
+git status 
+git commit -m "colocar nombre"
+git remote http://lizbet.arias.git
+git push -u origin master
+
+//ordenamos las carpetas y creamos la carpeta src (index.js) 
+donde van a estar el public PUBLIC(img, styles.css, registros.js) VIEWS(index.ejs)
+
+//ingresamos a nuestro visual y cambiamos el packaje.json, cambiaremos el scrip
+
+"test":"nodemon src/index.js"
+
+//importamos las librerias del githup en el index.js y cambiamos los DATOS
+
+index.js
+
+//subimos los cambios a nuestro repo githup, para luego clonarlos en el cloud
+
+git init
+git status
+git add .
+git status 
+git commit -m "colocar nombre"
+git push -u origin master
+
+//CREA TU AWS CON TU IP ELASTICA Y LOS PUERTOS DE SEGURIDAD
+
+HTTPS
+HTTP
+MYSQL/AURORA 
+TCP personalisado-3000
+
+-------------INGRESAMOS AL DONWALDS Y COLOCAMOS LO SIGUIENTE---------------
+
+chmod 400 archivo.pem
+ssh -i archivo.pem ubuntu@44.352.32.5
+sudo apt update && sudo apt upgrade
+sudo apt install curl gnupg2 gnupg -y
+sudo apt install yarn
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt install nodejs
+sudo apt install apache2
+sudo apt install mariadb-server
+sudo apt install php
+sudo apt install phpmyadmin
+    -marca el (apache2*) IMPORTANTE!!!!!!
+    -yes
+    -crea la contraseña (admin)
+
+//ingresamos al mysql desde el usuario remoto
+
+sudo mysql -u root -p
+    -create user 'verde'@'%' identified by 'admin';
+    -grant all privileges on *.* to 'verde'@'%';
+    -FLUSH PRIVILEGES;
+    -show databases;
+    -exit;
+
+//INGRESAMOS A NUESTRO VISUAL Y COLOCAMOS NUESTA CONEXION DE host
+
+//Clonamos nuestro repositorio CREADO
+
+    git clone http://nombre del repo.git
+    cd repo/
+    sudo npm install -g nodemon
+    npm run test
+
+//RECUERDA CREAR TU BASE DE DATOS CON TU USUARIO MYSQL
